@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDD9E094-28A0-4524-9A9B-6F3F450155C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DokuFlex.FileSync</RootNamespace>
+    <AssemblyName>DokuFlex.FileSync</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandProcessor.cs" />
+    <Compile Include="Commands\CreateDirectoryCommand.cs" />
+    <Compile Include="Commands\CreateOnlineDirectoryCommand.cs" />
+    <Compile Include="Commands\DeleteDirectoryCommand.cs" />
+    <Compile Include="Commands\DeleteFileCommand.cs" />
+    <Compile Include="Commands\DeleteOnlineDirectoryCommand.cs" />
+    <Compile Include="Commands\DeleteOnlineFileCommand.cs" />
+    <Compile Include="Commands\DownloadFileCommand.cs" />
+    <Compile Include="Commands\ICommandFacade.cs" />
+    <Compile Include="Commands\RenameDirectoryCommand.cs" />
+    <Compile Include="Commands\RenameFileCommand.cs" />
+    <Compile Include="Commands\UploadFileCommand.cs" />
+    <Compile Include="FileFolderInfo.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Resources.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="StopSyncingPresenter.cs" />
+    <Compile Include="StopSyncingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopSyncingView.Designer.cs">
+      <DependentUpon>StopSyncingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronizer.cs" />
+    <Compile Include="SyncNewUserGroupPresenter.cs" />
+    <Compile Include="SyncNewUserGroupView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncNewUserGroupView.Designer.cs">
+      <DependentUpon>SyncNewUserGroupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncProgressPresenter.cs" />
+    <Compile Include="SyncProgressView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncProgressView.Designer.cs">
+      <DependentUpon>SyncProgressView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncStatusView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncStatusView.Designer.cs">
+      <DependentUpon>SyncStatusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTableItem.cs" />
+    <Compile Include="SyncTableItemStatus.cs" />
+    <Compile Include="SyncTableManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopSyncingView.es.resx">
+      <DependentUpon>StopSyncingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopSyncingView.resx">
+      <DependentUpon>StopSyncingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncNewUserGroupView.es.resx">
+      <DependentUpon>SyncNewUserGroupView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncNewUserGroupView.resx">
+      <DependentUpon>SyncNewUserGroupView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncProgressView.es.resx">
+      <DependentUpon>SyncProgressView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncProgressView.resx">
+      <DependentUpon>SyncProgressView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncStatusView.es.resx">
+      <DependentUpon>SyncStatusView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncStatusView.resx">
+      <DependentUpon>SyncStatusView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DokuFlex.Common\DokuFlex.Common.csproj">
+      <Project>{34b15b90-b6be-4b14-a0f0-e0bc4ef388cb}</Project>
+      <Name>DokuFlex.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.8\tools\Microsoft.Bcl.Build.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

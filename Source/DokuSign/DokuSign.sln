@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokuSign", "DokuSign\DokuSign.csproj", "{3F170C87-DD5F-4AFF-8CA3-A941A2A4B1AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokuSign.AppTest", "DokuSign.AppTest\DokuSign.AppTest.csproj", "{3BBA0A0A-D2F3-44C9-A639-E71CB52BC5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokuFlex.Windows.Common", "..\DokuFlex.Windows.Common\DokuFlex.Windows.Common.csproj", "{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F170C87-DD5F-4AFF-8CA3-A941A2A4B1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F170C87-DD5F-4AFF-8CA3-A941A2A4B1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F170C87-DD5F-4AFF-8CA3-A941A2A4B1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F170C87-DD5F-4AFF-8CA3-A941A2A4B1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBA0A0A-D2F3-44C9-A639-E71CB52BC5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBA0A0A-D2F3-44C9-A639-E71CB52BC5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBA0A0A-D2F3-44C9-A639-E71CB52BC5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBA0A0A-D2F3-44C9-A639-E71CB52BC5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0233E02-B62A-4353-B7C9-A6716484DBBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuflex.Doku4Signatures", "src\Dokuflex.Doku4Signatures\Dokuflex.Doku4Signatures.csproj", "{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokuflex.WinControls", "src\Dokuflex.WinControls\Dokuflex.WinControls.csproj", "{337EB7F9-527E-4334-8A63-BC8B525C95DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337EB7F9-527E-4334-8A63-BC8B525C95DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337EB7F9-527E-4334-8A63-BC8B525C95DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337EB7F9-527E-4334-8A63-BC8B525C95DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337EB7F9-527E-4334-8A63-BC8B525C95DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04EFF5AA-ABB2-423F-B3C7-50756CC5A59E} = {A0233E02-B62A-4353-B7C9-A6716484DBBF}
+		{337EB7F9-527E-4334-8A63-BC8B525C95DD} = {A0233E02-B62A-4353-B7C9-A6716484DBBF}
+	EndGlobalSection
+EndGlobal

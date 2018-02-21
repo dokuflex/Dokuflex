@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21316159-7415-4F7C-9A82-540AFD96758B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DokuFlex.WinForms.Common</RootNamespace>
+    <AssemblyName>DokuFlex.WinForms.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowseFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseFolderForm.Designer.cs">
+      <DependentUpon>BrowseFolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MetadataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MetadataControl.Designer.cs">
+      <DependentUpon>MetadataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FakeFolderObject.cs" />
+    <Compile Include="FavoritesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FavoritesForm.Designer.cs">
+      <DependentUpon>FavoritesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Folder.cs" />
+    <Compile Include="ListViewItemComparer.cs" />
+    <Compile Include="ListViewItemReverseComparer.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetadataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetadataForm.Designer.cs">
+      <DependentUpon>MetadataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenFileForm.Designer.cs">
+      <DependentUpon>OpenFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecentsForm.Designer.cs">
+      <DependentUpon>RecentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ImageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\StringResources.es.Designer.cs">
+      <DependentUpon>StringResources.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveFileForm.Designer.cs">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferProgressForm.Designer.cs">
+      <DependentUpon>TransferProgressForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DokuFlex.Windows.Common\DokuFlex.Windows.Common.csproj">
+      <Project>{0cac64ed-8edc-42f2-a982-66ff83af9a73}</Project>
+      <Name>DokuFlex.Windows.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BrowseFolderForm.es.resx">
+      <DependentUpon>BrowseFolderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseFolderForm.resx">
+      <DependentUpon>BrowseFolderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MetadataControl.es.resx">
+      <DependentUpon>MetadataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MetadataControl.resx">
+      <DependentUpon>MetadataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FavoritesForm.es.resx">
+      <DependentUpon>FavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FavoritesForm.resx">
+      <DependentUpon>FavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.es.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetadataForm.es.resx">
+      <DependentUpon>MetadataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetadataForm.resx">
+      <DependentUpon>MetadataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenFileForm.es.resx">
+      <DependentUpon>OpenFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenFileForm.resx">
+      <DependentUpon>OpenFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecentsForm.es.resx">
+      <DependentUpon>RecentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecentsForm.resx">
+      <DependentUpon>RecentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImageResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringResources.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFileForm.es.resx">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFileForm.resx">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.es.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.es.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferProgressForm.es.resx">
+      <DependentUpon>TransferProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferProgressForm.resx">
+      <DependentUpon>TransferProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoSmall.png" />
+    <None Include="Resources\RenameSmall.png" />
+    <None Include="Resources\view_small_icons.png" />
+    <None Include="Resources\view_list.png" />
+    <None Include="Resources\view_large_icons.png" />
+    <None Include="Resources\view_details.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\FolderUpdate.png" />
+    <None Include="Resources\file_extension_doc_small.png" />
+    <None Include="Resources\file_extension_jpeg_small.png" />
+    <None Include="Resources\file_extension_jpg_small.png" />
+    <None Include="Resources\file_extension_pdf_small.png" />
+    <None Include="Resources\file_extension_pps_small.png" />
+    <None Include="Resources\file_extension_rtf_small.png" />
+    <None Include="Resources\file_extension_tif_small.png" />
+    <None Include="Resources\file_extension_xls_small.png" />
+    <None Include="Resources\file_extension_zip_small.png" />
+    <None Include="Resources\file_extension_png_small.png" />
+    <None Include="Resources\file_extension_tmp_small.png" />
+    <None Include="Resources\file_extension_doc_large.png" />
+    <None Include="Resources\file_extension_jpeg_large.png" />
+    <None Include="Resources\file_extension_jpg_large.png" />
+    <None Include="Resources\file_extension_pdf_large.png" />
+    <None Include="Resources\file_extension_png_large.png" />
+    <None Include="Resources\file_extension_pps_large.png" />
+    <None Include="Resources\file_extension_rar_large.png" />
+    <None Include="Resources\file_extension_rar_small.png" />
+    <None Include="Resources\file_extension_rtf_large.png" />
+    <None Include="Resources\file_extension_tif_large.png" />
+    <None Include="Resources\file_extension_tmp_large.png" />
+    <None Include="Resources\file_extension_xls_large.png" />
+    <None Include="Resources\file_extension_zip_large.png" />
+    <None Include="Resources\folderLarge.png" />
+    <None Include="Resources\FolderNewSmall.png" />
+    <None Include="Resources\FolderUploadSmall.png" />
+    <None Include="Resources\DownloadSmall.png" />
+    <None Include="Resources\DeleteSmall.png" />
+    <None Include="Resources\HelpSmall.png" />
+    <Content Include="Resources\Images\AcceptLarge.png" />
+    <Content Include="Resources\Images\Delete.png" />
+    <Content Include="Resources\Images\DeleteLarge.png" />
+    <None Include="Resources\Images\FavoriteAddSmall.png" />
+    <None Include="Resources\Images\EmailPicture.png" />
+    <Content Include="Resources\Images\FavoriteLarge.png" />
+    <None Include="Resources\Images\FileExtensionDocSmall.png" />
+    <None Include="Resources\Images\FileExtensionPpsSmall.png" />
+    <None Include="Resources\Images\FileExtensionXlsSmall.png" />
+    <Content Include="Resources\Images\History.png" />
+    <Content Include="Resources\Images\LoginPicture.png" />
+    <None Include="Resources\Images\MailAddLarge.png" />
+    <Content Include="Resources\Images\MetadataLarge.png" />
+    <Content Include="Resources\Images\NavFirstSmall.png" />
+    <Content Include="Resources\Images\NavLastSmall.png" />
+    <Content Include="Resources\Images\NavNextSmall.png" />
+    <Content Include="Resources\Images\NavPreviousSmall.png" />
+    <Content Include="Resources\Images\OpenLarge.png" />
+    <Content Include="Resources\Images\Picture.png" />
+    <Content Include="Resources\Images\PreviewLarge.png" />
+    <Content Include="Resources\Images\RecentListLarge.png" />
+    <Content Include="Resources\Images\SaveLarge.png" />
+    <Content Include="Resources\Images\scanner.png" />
+    <Content Include="Resources\Images\ScannerLarge.png" />
+    <Content Include="Resources\Images\SearchLarge.png" />
+    <Content Include="Resources\Images\SearchSmall.png" />
+    <Content Include="Resources\Images\SettingsLarge.png" />
+    <None Include="Resources\Images\TaskAddLarge.png" />
+    <Content Include="Resources\Images\WindowSplit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

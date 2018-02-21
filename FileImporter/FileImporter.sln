@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8F09D3A6-B6AA-48AE-81B1-01B126A9E896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImporter", "src\FileImporter\FileImporter.csproj", "{9A7EC427-3F12-477B-8B82-9125C29876BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokuFlex.Windows.Common", "..\Source\DokuFlex.Windows.Common\DokuFlex.Windows.Common.csproj", "{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokuFlex.WinForms.Common", "..\Source\DokuFlex.WinForms.Common\DokuFlex.WinForms.Common.csproj", "{21316159-7415-4F7C-9A82-540AFD96758B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A7EC427-3F12-477B-8B82-9125C29876BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7EC427-3F12-477B-8B82-9125C29876BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7EC427-3F12-477B-8B82-9125C29876BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7EC427-3F12-477B-8B82-9125C29876BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21316159-7415-4F7C-9A82-540AFD96758B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21316159-7415-4F7C-9A82-540AFD96758B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21316159-7415-4F7C-9A82-540AFD96758B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21316159-7415-4F7C-9A82-540AFD96758B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A7EC427-3F12-477B-8B82-9125C29876BA} = {8F09D3A6-B6AA-48AE-81B1-01B126A9E896}
+		{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73} = {8F09D3A6-B6AA-48AE-81B1-01B126A9E896}
+		{21316159-7415-4F7C-9A82-540AFD96758B} = {8F09D3A6-B6AA-48AE-81B1-01B126A9E896}
+	EndGlobalSection
+EndGlobal

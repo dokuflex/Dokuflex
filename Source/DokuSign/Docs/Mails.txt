@@ -1,0 +1,38 @@
+Hola Emilio,
+
+tenemos que ser capaces de leer lo que pone despues de 
+
+Document ID: OPD000000000000001000000147300000
+
+Tendriamos que poder parametrizar lo que tenemos que buscar
+
+================================================================
+
+Hola Emilio,
+
+Primero felicitarte por el gran trabajo que estas haciendo. Te voy a poner una serie de cosas para mejorar lo que estamos realizando.
+
+El campo certificado hazlo mas grande.
+Que no existe el botón de buscar de forma local.
+Una vez que firmemos con certificado digital ocultamos el tema de la hacer visible la firma. Esto lo tenemos que tratar, pero ahora no es el momento.
+Tenemso que hacer más grande el visualizador(la imagen )  Yo diria que podiamos cambiar el paso de pagina  estido  <--1/2 --> debajo de la imagen. Distribuir de otroa forma para que la imagen pueda ser algo visible.
+Por otro lado las coordenadas por defecto. Que no deje mandar la firma si no se han seleccionado coordenadas.
+Si no esta conectado un dispositivo de firma que salga un popup avisando
+Si intento firmar con un certificado o que no puede ser exportable o esta mal la contraseña me sale un mensaje de error controlado pero luego me da una exception la aplicacion.
+
+Vamos por el buen camino. Felicitarte otra vez por tu trabajo.
+
+Saludos
+
+=================================================================
+
+Hola,
+
+el el fileUpload puedes cambiar el source para la impresora virtual.
+
+Puedes poner:
+Certificado local: DokuSignPrinterLocalCertificate
+Certificado remote: DokuSignPrinterSystemCertificate
+Bioemtrico: DokuSignPrinterBiometric
+
+=================================================================

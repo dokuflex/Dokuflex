@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\DokuFlex.Excel.AddIn\DokuFlex.Excel.AddIn.csproj">
+			<Name>DokuFlex.Excel.AddIn</Name>
+			<Project>{CA0FF4BD-7B35-4B11-9328-0874E8A2A250}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\DokuFlex.Outlook.AddIn\DokuFlex.Outlook.AddIn.csproj">
+			<Name>DokuFlex.Outlook.AddIn</Name>
+			<Project>{F149C198-7487-4638-9DE7-FD32BCCC318B}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\DokuFlex.PowerPoint.AddIn\DokuFlex.PowerPoint.AddIn.csproj">
+			<Name>DokuFlex.PowerPoint.AddIn</Name>
+			<Project>{88DDD9E6-7A39-46FE-A856-DE24A3608941}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\DokuFlex.WinForms.Common\DokuFlex.WinForms.Common.csproj">
+			<Name>DokuFlex.WinForms.Common</Name>
+			<Project>{21316159-7415-4F7C-9A82-540AFD96758B}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\DokuFlex.Windows.Common\DokuFlex.Windows.Common.csproj">
+			<Name>DokuFlex.Windows.Common</Name>
+			<Project>{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\DokuFlex.Word.AddIn\DokuFlex.Word.AddIn.csproj">
+			<Name>DokuFlex.Word.AddIn</Name>
+			<Project>{4E0A93AD-7445-405B-ADDB-437463E426EA}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

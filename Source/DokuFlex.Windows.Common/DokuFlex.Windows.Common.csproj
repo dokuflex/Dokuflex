@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CAC64ED-8EDC-42F2-A982-66FF83AF9A73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DokuFlex.Windows.Common</RootNamespace>
+    <AssemblyName>DokuFlex.Windows.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Dokuflex-FileImporter\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Credentials.cs" />
+    <Compile Include="DFEnvironment.cs" />
+    <Compile Include="ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\FileInfoExtensions.cs" />
+    <Compile Include="Extensions\ImageExtension.cs" />
+    <Compile Include="Extensions\MimeTypesExtensions.cs" />
+    <Compile Include="Extensions\StringEncryptExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="FileExtension.cs" />
+    <Compile Include="GlobalAssemblyInfo.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Log\ILog.cs" />
+    <Compile Include="Log\Log4NetLog.cs" />
+    <Compile Include="Log\LogFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\DataServiceFactory.cs" />
+    <Compile Include="Services\Data\AppCategory.cs" />
+    <Compile Include="Services\Data\AppInfo.cs" />
+    <Compile Include="Services\Data\GetAppInfoResponse.cs" />
+    <Compile Include="Services\Data\Category.cs" />
+    <Compile Include="Services\Data\Certificate.cs" />
+    <Compile Include="Services\Data\CreateFolderResponse.cs" />
+    <Compile Include="Services\Data\Documentary.cs" />
+    <Compile Include="Services\Data\DokuField.cs" />
+    <Compile Include="Services\Data\FileFolder.cs" />
+    <Compile Include="Services\Data\FileUploadResponse.cs" />
+    <Compile Include="Services\Data\GetDocumentaryTypesResponse.cs" />
+    <Compile Include="Services\Data\GetDocumentMetadataResponse.cs" />
+    <Compile Include="Services\Data\GetFilesFoldersResponse.cs" />
+    <Compile Include="Services\Data\GetRecentFilesResponse.cs" />
+    <Compile Include="Services\Data\GetScanHistoryResponse.cs" />
+    <Compile Include="Services\Data\GetUserGroupsResponse.cs" />
+    <Compile Include="Services\Data\IDocument.cs" />
+    <Compile Include="Services\Data\LinkDocToTaskResponse.cs" />
+    <Compile Include="Services\Data\ListCategoriesResponse.cs" />
+    <Compile Include="Services\Data\ListCertificatesResponse.cs" />
+    <Compile Include="Services\Data\ListProcessesResponse.cs" />
+    <Compile Include="Services\Data\ListProjectsResponse.cs" />
+    <Compile Include="Services\Data\LoginResponse.cs" />
+    <Compile Include="Services\Data\Process.cs" />
+    <Compile Include="Services\Data\ProcessData.cs" />
+    <Compile Include="Services\Data\ProcessUpdateDataResponse.cs" />
+    <Compile Include="Services\Data\Project.cs" />
+    <Compile Include="Services\Data\RecentFile.cs" />
+    <Compile Include="Services\Data\RestResponse.cs" />
+    <Compile Include="Services\Data\RestResponseError.cs" />
+    <Compile Include="Services\Data\ScanHistory.cs" />
+    <Compile Include="Services\Data\SearchUserResult.cs" />
+    <Compile Include="Services\Data\SearchUserResponse.cs" />
+    <Compile Include="Services\Data\SearchResponse.cs" />
+    <Compile Include="Services\Data\SearchResult.cs" />
+    <Compile Include="Services\Data\SignaturePosition.cs" />
+    <Compile Include="Services\Data\UpdateTaskResponse.cs" />
+    <Compile Include="Services\Data\UploadResult.cs" />
+    <Compile Include="Services\Data\UserGroup.cs" />
+    <Compile Include="Services\DokuFlexService.cs" />
+    <Compile Include="Services\FakeDataService.cs" />
+    <Compile Include="Services\IDataService.cs" />
+    <Compile Include="Services\RESTful\RESTfulService.cs" />
+    <Compile Include="Services\RestResponseException.cs" />
+    <Compile Include="TrackingItem.cs" />
+    <Compile Include="TrackingListManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
