@@ -10,7 +10,7 @@ using System.IO;
 namespace Org.Eurekaa.PDF.iSafePDF
 {
     /// <summary>
-    /// This class hold the certificate and extract private key needed for e-signature 
+    /// This class hold the certificate and extract private key needed for e-signature
     /// </summary>
     internal class Cert
     {

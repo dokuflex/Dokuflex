@@ -141,7 +141,7 @@ namespace DokuFlex.Scan
             //AddToListView(si);
             //#endregion
 
-
+            SetUrlProtocol();
             _documentaryTypes = new List<Documentary>();
         }
 
@@ -574,6 +574,40 @@ namespace DokuFlex.Scan
             finally
             {
                 this.Cursor = Cursors.Default;
+            }
+        }
+
+        private void SetUrlProtocol()
+        {
+            try
+            {
+                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey("Doku4InvoicesUrlLaunch");
+
+                if (key != null) return;
+
+                key = Microsoft.Win32.Registry.ClassesRoot.CreateSubKey("Doku4InvoicesUrlLaunch");
+                key.SetValue(string.Empty, "URL:Doku4InvoicesUrlLaunch Protocol");
+                key.SetValue("URL Protocol", string.Empty);
+
+                // Add Default Icon
+                var key2 = key.CreateSubKey("DefaultIcon");
+                key2.SetValue(string.Empty, Application.ExecutablePath);
+
+                // Add command
+                var key3 = key.CreateSubKey("Shell");
+                var key4 = key3.CreateSubKey("Open");
+                var key5 = key4.CreateSubKey("command");
+                key5.SetValue(string.Empty, $"\"{Application.ExecutablePath}\" \"%1\"");
+
+                key5.Close();
+                key4.Close();
+                key3.Close();
+                key2.Close();
+                key.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo acceder al registro de Windows, el usuario no tiene privilegios administrativos para realizar esta acción", "Doku4Invoices");
             }
         }
 

@@ -117,7 +117,7 @@ namespace DokuFlex.Scan.Forms
             var fileTypes = new ArrayList();
             fileTypes.Add(new FileType("TIFF", ".tiff"));
             fileTypes.Add(new FileType("BMP", ".bmp"));
-            fileTypes.Add(new FileType("JPG", ".jpg"));
+            fileTypes.Add(new FileType("JPEG", ".jpeg"));
             fileTypes.Add(new FileType("PNG", ".png"));
 
             cbxFileType.Items.Clear();

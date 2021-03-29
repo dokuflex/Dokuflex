@@ -42,9 +42,9 @@ namespace DokuFlex.Windows.Common.Extensions
                     imgFormat = ImageFormat.Tiff;
                     break;
 
-                case "jpg":
+                case "jpeg":
 
-                case ".jpg":
+                case ".jpeg":
                     imgFormat = ImageFormat.Jpeg;
                     break;
 

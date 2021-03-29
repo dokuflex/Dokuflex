@@ -50,9 +50,12 @@ namespace DokuFlex.Scan.Forms
                 {
                     if (string.IsNullOrWhiteSpace(scannedImage.Path))
                     {
-                        scannedImage.Path = String.Format("{0}\\{1}",
-                            DFEnvironment.GetSpecialFolder(DFEnvironment.SpecialFolder.UploadDirectory),
-                            scannedImage.Name + scannedImage.FileType);
+                        var uploadDir = DFEnvironment.GetSpecialFolder(DFEnvironment.SpecialFolder.UploadDirectory);
+
+                        scannedImage.Path = String.Format("{0}\\{1}",uploadDir,scannedImage.Name + scannedImage.FileType);
+
+                        if (!Directory.Exists(uploadDir))
+                            Directory.CreateDirectory(uploadDir);
 
                         try
                         {

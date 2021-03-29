@@ -515,7 +515,7 @@ namespace DokuFlex.Scan.Forms
 
                 if (rbtnJPG.Checked)
                 {
-                    fileType = ".jpg";
+                    fileType = ".jpeg";
                 }
 
                 if (rbtnPNG.Checked)
@@ -941,7 +941,7 @@ namespace DokuFlex.Scan.Forms
                     rbtnTIFF.Checked = true;
                     break;
 
-                case ".jpg":
+                case ".jpeg":
                     rbtnJPG.Checked = true;
                     break;
 

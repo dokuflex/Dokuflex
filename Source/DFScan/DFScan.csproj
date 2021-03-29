@@ -37,14 +37,14 @@
     <ApplicationIcon>scanner.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataMatrix.net">
-      <HintPath>..\..\Packages\DataMatrixNet.1.0.0\DataMatrix.net.dll</HintPath>
+    <Reference Include="DataMatrix.net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataMatrix.net.0.4.2\lib\20\DataMatrix.net.dll</HintPath>
     </Reference>
-    <Reference Include="Saraff.IoC, Version=1.0.8.611, Culture=neutral, PublicKeyToken=941762d7e2681ad9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Saraff.IoC.1.0.8.611\lib\net40\Saraff.IoC.dll</HintPath>
+    <Reference Include="Saraff.IoC, Version=1.0.12.712, Culture=neutral, PublicKeyToken=941762d7e2681ad9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Saraff.IoC.1.0.12.712\lib\net40\Saraff.IoC.dll</HintPath>
     </Reference>
-    <Reference Include="Saraff.Twain, Version=1.0.27.606, Culture=neutral, PublicKeyToken=467d7c56f22cafb6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Saraff.Twain.1.0.27.606\lib\net40\Saraff.Twain.dll</HintPath>
+    <Reference Include="Saraff.Twain, Version=1.0.30.695, Culture=neutral, PublicKeyToken=467d7c56f22cafb6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Saraff.Twain.1.0.30.695\lib\net40\Saraff.Twain.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
